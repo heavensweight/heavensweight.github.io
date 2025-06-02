@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A personal story about growing up in Islam and reclaiming freedom of thought." />
+  <meta name="author" content="Your Name" />
+  <meta name="keywords" content="Born Into Islam, Personal Story, Religion, Atheism, Freedom of Thought" />
+  <title>Born Into Islam</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1521133573892-e44906baee46?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(10, 10, 10, 0.75);
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    /* Navigation Bar */
+    nav {
+      position: relative;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Vertically center nav items */
+      padding: 1em 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 25px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+    }
+
+    nav a:hover, nav a:focus {
+      color: #ff4c4c;
+      text-shadow: 0 0 8px #ff4c4c;
+      outline: none;
+    }
+
+    nav a.active {
+      border: 2px solid #ff4c4c;
+      border-radius: 5px;
+      padding: 5px 15px;
+    }
+
+    /* Content Container */
+    .container {
+      max-width: 750px;
+      margin: 110px auto 40px;
+      padding: 30px 35px;
+      background: rgba(0,0,0,0.75);
+      border-radius: 12px;
+      position: relative;
+      z-index: 5;
+      box-shadow: 0 0 25px rgba(255, 76, 76, 0.3);
+    }
+
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.8em;
+      margin-bottom: 0.6em;
+      color: #ff4c4c;
+      text-shadow: 0 0 7px #ff4c4c;
+    }
+
+    p {
+      font-size: 1.15em;
+      line-height: 1.7em;
+    }
+
+    a.read-blogs {
+      display: inline-block;
+      margin-top: 30px;
+      color: #ff7777;
+      font-weight: 700;
+      text-decoration: none;
+      transition: text-decoration 0.3s;
+    }
+
+    a.read-blogs:hover, a.read-blogs:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+
+    a.read-blogs:focus {
+      outline: 2px solid #ff7777;
+      outline-offset: 2px;
+    }
+
+    /* Mobile Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        margin: 90px 20px 40px;
+        padding: 20px;
+        max-width: 90%;
+      }
+
+      h1 {
+        font-size: 2.2em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" aria-label="Home Page" id="homeLink">Home</a>
+  <a href="my-story.html" aria-label="My Personal Story" id="storyLink">My Story</a>
+  <a href="blogs.html" aria-label="Blog Posts" id="blogsLink">Blogs</a>
+</nav>
+
+<div class="container">
+  <h1>Born Into Islam. This Is What It Did to Me.</h1>
+  <p>This is where I share my story — a story shaped by faith, fear, and the heavy expectations I was born into. My childhood wasn’t normal; it was filled with pressure and control that left deep scars.</p>
+  <p>I don’t expect anyone to have lived exactly what I did. Maybe no one ever has. But if you’ve ever struggled with beliefs that didn’t fit you, or felt trapped by family or tradition, you might understand some of this.</p>
+  <p>Here, I speak honestly about what religion took from me, and what I’m trying to reclaim: my freedom to think, to question, and to simply be myself. Thank you for being here.</p>
+  <a href="blogs.html" class="read-blogs">Read my blogs &rarr;</a>
+</div>
+
+<script>
+  // Get the current URL
+  const currentURL = window.location.href;
+
+  // Function to highlight the active page in the navigation
+  const highlightActiveLink = () => {
+    const links = document.querySelectorAll('nav a');
+    links.forEach(link => {
+      if (currentURL.includes(link.href)) {
+        link.classList.add('active'); // Add the 'active' class to the current page
+      } else {
+        link.classList.remove('active'); // Remove the 'active' class from other links
+      }
+    });
+  };
+
+  // Call the function to highlight the active link
+  highlightActiveLink();
+</script>
+
+</body>
+</html>
