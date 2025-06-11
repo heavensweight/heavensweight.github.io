@@ -47,19 +47,23 @@
       margin: 0 25px;
       font-weight: 700;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      position: relative;
+      transition: color 0.3s ease-in-out;
     }
 
-    nav a:hover, nav a:focus {
-      color: #ff4c4c;
-      text-shadow: 0 0 8px #ff4c4c;
-      outline: none;
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: -5px;
+      left: 0;
+      background-color: #ff4c4c;
+      transition: width 0.4s ease;
     }
 
-    nav a.active {
-      border: 2px solid #ff4c4c;
-      border-radius: 5px;
-      padding: 5px 15px;
+    nav a:hover::after, nav a:focus::after, nav a.active::after {
+      width: 100%;
     }
 
     /* Content Container */
@@ -140,14 +144,16 @@
   // Highlight active link correctly
   const highlightActiveLink = () => {
     const links = document.querySelectorAll('nav a');
-    const currentPage = window.location.pathname.split('/').pop();
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
 
     links.forEach(link => {
       const linkPage = link.getAttribute('href');
-      if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+      if (linkPage === currentPage) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
       } else {
         link.classList.remove('active');
+        link.removeAttribute('aria-current');
       }
     });
   };
