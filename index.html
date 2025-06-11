@@ -36,7 +36,7 @@
       background: rgba(0,0,0,0.9);
       display: flex;
       justify-content: center;
-      align-items: center; /* Vertically center nav items */
+      align-items: center;
       padding: 1em 0;
       z-index: 10;
     }
@@ -47,7 +47,7 @@
       margin: 0 25px;
       font-weight: 700;
       cursor: pointer;
-      transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+      transition: all 0.3s ease-in-out;
     }
 
     nav a:hover, nav a:focus {
@@ -118,7 +118,6 @@
         font-size: 2.2em;
       }
     }
-
   </style>
 </head>
 <body>
@@ -138,22 +137,21 @@
 </div>
 
 <script>
-  // Get the current URL
-  const currentURL = window.location.href;
-
-  // Function to highlight the active page in the navigation
+  // Highlight active link correctly
   const highlightActiveLink = () => {
     const links = document.querySelectorAll('nav a');
+    const currentPage = window.location.pathname.split('/').pop();
+
     links.forEach(link => {
-      if (currentURL.includes(link.href)) {
-        link.classList.add('active'); // Add the 'active' class to the current page
+      const linkPage = link.getAttribute('href');
+      if (linkPage === currentPage || (currentPage === '' && linkPage === 'index.html')) {
+        link.classList.add('active');
       } else {
-        link.classList.remove('active'); // Remove the 'active' class from other links
+        link.classList.remove('active');
       }
     });
   };
 
-  // Call the function to highlight the active link
   highlightActiveLink();
 </script>
 
