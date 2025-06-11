@@ -6,12 +6,20 @@
   <meta name="description" content="A personal story about growing up in Islam and reclaiming freedom of thought." />
   <meta name="author" content="Your Name Here" />
   <meta name="keywords" content="Born Into Islam, Personal Story, Religion, Atheism, Freedom of Thought" />
-
-  <!-- Open Graph meta tags for social sharing -->
-  <meta property="og:title" content="What They Preached Was Peace, What I Lived Was Pain" />
-  <meta property="og:image" content="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg" />
-
   <title>What They Preached Was Peace, What I Lived Was Pain - Born Into Islam</title>
+
+  <!-- Open Graph Meta Tags for Social Media Sharing -->
+  <meta property="og:title" content="What They Preached Was Peace, What I Lived Was Pain" />
+  <meta property="og:description" content="A personal story about growing up in Islam and reclaiming freedom of thought." />
+  <meta property="og:image" content="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg" />
+  <meta property="og:url" content="https://heavensweight.github.io/my-story.html" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What They Preached Was Peace, What I Lived Was Pain">
+  <meta name="twitter:description" content="A personal story about growing up in Islam and reclaiming freedom of thought.">
+  <meta name="twitter:image" content="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
@@ -46,7 +54,6 @@
       font-weight: 700;
       cursor: pointer;
       position: relative;
-      transition: color 0.3s ease-in-out;
     }
 
     nav a::after {
@@ -60,14 +67,8 @@
       transition: width 0.4s ease;
     }
 
-    nav a:hover::after, nav a:focus::after {
+    nav a:hover::after, nav a.active::after {
       width: 100%;
-    }
-
-    nav a.active {
-      border: 2px solid #ff4c4c;
-      border-radius: 5px;
-      padding: 5px 15px;
     }
 
     .image-container {
