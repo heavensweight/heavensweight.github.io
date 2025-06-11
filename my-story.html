@@ -1,178 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A personal story about growing up in Islam and reclaiming freedom of thought." />
-  <meta name="author" content="Your Name Here" />
-  <meta name="keywords" content="Born Into Islam, Personal Story, Religion, Atheism, Freedom of Thought" />
-  <title>What They Preached Was Peace, What I Lived Was Pain - Born Into Islam</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A personal story about growing up in Islam and reclaiming freedom of thought." />
+  <meta name="author" content="Your Name Here" />
+  <meta name="keywords" content="Born Into Islam, Personal Story, Religion, Atheism, Freedom of Thought" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="What They Preached Was Peace, What I Lived Was Pain" />
-  <meta property="og:description" content="A personal story about growing up in Islam and reclaiming freedom of thought." />
-  <meta property="og:image" content="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg" />
-  <meta property="og:url" content="https://heavensweight.github.io/my-story.html" />
+  <!-- Open Graph meta tags for social sharing -->
+  <meta property="og:title" content="What They Preached Was Peace, What I Lived Was Pain" />
+  <meta property="og:image" content="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg" />
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="What They Preached Was Peace, What I Lived Was Pain" />
-  <meta name="twitter:description" content="A personal story about growing up in Islam and reclaiming freedom of thought." />
-  <meta name="twitter:image" content="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg" />
+  <title>What They Preached Was Peace, What I Lived Was Pain - Born Into Islam</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    body {
-      margin: 0;
-      font-family: 'Open Sans', Arial, sans-serif;
-      background: #0a0a0a;
-      color: white;
-      min-height: 100vh;
-    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', Arial, sans-serif;
+      background: #0a0a0a;
+      color: white;
+      min-height: 100vh;
+    }
 
-    nav {
-      position: relative;
-      width: 100%;
-      background: rgba(0,0,0,0.9);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 1em 0;
-      z-index: 10;
-    }
+    nav {
+      position: relative;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1em 0;
+      z-index: 10;
+    }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 25px;
-      font-weight: 700;
-      cursor: pointer;
-      position: relative;
-      transition: color 0.3s ease-in-out;
-    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 25px;
+      font-weight: 700;
+      cursor: pointer;
+      position: relative;
+      transition: color 0.3s ease-in-out;
+    }
 
-    nav a::after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 3px;
-      bottom: -5px;
-      left: 0;
-      background-color: #ff4c4c;
-      transition: width 0.4s ease;
-    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      bottom: -5px;
+      left: 0;
+      background-color: #ff4c4c;
+      transition: width 0.4s ease;
+    }
 
-    nav a:hover::after, nav a:focus::after {
-      width: 100%;
-    }
+    nav a:hover::after, nav a:focus::after {
+      width: 100%;
+    }
 
-    nav a.active {
-      border: 2px solid #ff4c4c;
-      border-radius: 5px;
-      padding: 5px 15px;
-    }
+    nav a.active {
+      border: 2px solid #ff4c4c;
+      border-radius: 5px;
+      padding: 5px 15px;
+    }
 
-    .image-container {
-      text-align: center;
-      margin-top: 50px;
-    }
+    .image-container {
+      text-align: center;
+      margin-top: 50px;
+    }
 
-    .image-container img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(255, 76, 76, 0.3);
-    }
+    .image-container img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(255, 76, 76, 0.3);
+    }
 
-    .container {
-      max-width: 750px;
-      margin: 40px auto;
-      padding: 30px 35px;
-      background: rgba(0,0,0,0.75);
-      border-radius: 12px;
-      position: relative;
-      z-index: 5;
-      box-shadow: 0 0 25px rgba(255, 76, 76, 0.3);
-    }
+    .container {
+      max-width: 750px;
+      margin: 40px auto;
+      padding: 30px 35px;
+      background: rgba(0,0,0,0.75);
+      border-radius: 12px;
+      position: relative;
+      z-index: 5;
+      box-shadow: 0 0 25px rgba(255, 76, 76, 0.3);
+    }
 
-    h1 {
-      font-family: 'Merriweather', serif;
-      font-size: 2.8em;
-      margin-bottom: 0.6em;
-      color: #ff4c4c;
-      text-shadow: 0 0 7px #ff4c4c;
-    }
+    h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.8em;
+      margin-bottom: 0.6em;
+      color: #ff4c4c;
+      text-shadow: 0 0 7px #ff4c4c;
+    }
 
-    p {
-      font-size: 1.15em;
-      line-height: 1.7em;
-    }
+    p {
+      font-size: 1.15em;
+      line-height: 1.7em;
+    }
 
-    @media (max-width: 768px) {
-      .container {
-        margin: 30px 20px;
-        padding: 20px;
-        max-width: 90%;
-      }
+    @media (max-width: 768px) {
+      .container {
+        margin: 30px 20px;
+        padding: 20px;
+        max-width: 90%;
+      }
 
-      h1 {
-        font-size: 2.2em;
-      }
-    }
-  </style>
+      h1 {
+        font-size: 2.2em;
+      }
+    }
+  </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" id="homeLink">Home</a>
-  <a href="story.html" id="storyLink">My Story</a>
-  <a href="blogs.html" id="blogsLink">Blogs</a>
+  <a href="index.html" id="homeLink">Home</a>
+  <a href="story.html" id="storyLink">My Story</a>
+  <a href="blogs.html" id="blogsLink">Blogs</a>
 </nav>
 
 <div class="image-container">
-  <img src="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg" alt="Relevant Story Image">
+  <img src="https://github.com/heavensweight/heavensweight.github.io/raw/refs/heads/main/gettyimages-170486204-612x612.jpg" alt="Relevant Story Image">
 </div>
 
 <div class="container" id="story">
-  <h1>What They Preached Was Peace, What I Lived Was Pain</h1>
-  <p>Growing up in a strictly religious household, I was taught that faith was the foundation of everything. The constant pressure of being perfect in the eyes of my community and family made my childhood feel suffocating. My every move, word, and action was scrutinized through the lens of religious doctrine. What was supposed to be peace, turned into a life filled with guilt, fear, and deep emotional pain.</p>
+  <h1>What They Preached Was Peace, What I Lived Was Pain</h1>
+  <p>Growing up in a strictly religious household, I was taught that faith was the foundation of everything. The constant pressure of being perfect in the eyes of my community and family made my childhood feel suffocating. My every move, word, and action was scrutinized through the lens of religious doctrine. What was supposed to be peace, turned into a life filled with guilt, fear, and deep emotional pain.</p>
 
-  <p>For years, I struggled to meet the standards set for me, never feeling good enough. Each time I failed, the weight of disappointment from my family felt unbearable. I wasn’t just failing in their eyes, but in the eyes of my religion, my faith, and my very identity.</p>
+  <p>For years, I struggled to meet the standards set for me, never feeling good enough. Each time I failed, the weight of disappointment from my family felt unbearable. I wasn’t just failing in their eyes, but in the eyes of my religion, my faith, and my very identity.</p>
 
-  <p>But even as I was surrounded by the loud voices preaching peace, I couldn't ignore the pain I was living through. I began to question everything: the teachings, the rituals, and even the people I loved most. Why was I supposed to follow a path that didn't feel right for me? What if there was more to life than just living in fear?</p>
+  <p>But even as I was surrounded by the loud voices preaching peace, I couldn't ignore the pain I was living through. I began to question everything: the teachings, the rituals, and even the people I loved most. Why was I supposed to follow a path that didn't feel right for me? What if there was more to life than just living in fear?</p>
 
-  <p>Over time, I began to unlearn the beliefs that had been ingrained in me. Reclaiming my right to think freely, to explore life on my own terms, was a hard but necessary journey. The pain of questioning everything I had once believed was immense, but the freedom it brought was worth it. I was no longer a prisoner of my past. I was finally free.</p>
+  <p>Over time, I began to unlearn the beliefs that had been ingrained in me. Reclaiming my right to think freely, to explore life on my own terms, was a hard but necessary journey. The pain of questioning everything I had once believed was immense, but the freedom it brought was worth it. I was no longer a prisoner of my past. I was finally free.</p>
 
-  <p>It wasn’t easy, and I still struggle at times. But today, I live my life with purpose and clarity, knowing that I have the power to make my own choices. I hope my story can inspire others to reclaim their freedom too—freedom from fear, guilt, and the burden of living for someone else’s ideals.</p>
+  <p>It wasn’t easy, and I still struggle at times. But today, I live my life with purpose and clarity, knowing that I have the power to make my own choices. I hope my story can inspire others to reclaim their freedom too—freedom from fear, guilt, and the burden of living for someone else’s ideals.</p>
 
-  <p>Thank you for reading.</p>
+  <p>Thank you for reading.</p>
 </div>
 
 <script>
-  // Function to highlight the active navigation link
-  const highlightActiveLink = () => {
-    const links = document.querySelectorAll('nav a');
-    const currentPage = window.location.pathname;
+  // Function to highlight the active navigation link
+  const highlightActiveLink = () => {
+    const links = document.querySelectorAll('nav a');
+    const currentPage = window.location.pathname;
 
-    links.forEach(link => {
-      const linkPage = link.getAttribute('href');
-      if (currentPage.includes(linkPage)) {
-        link.classList.add('active');
-        link.setAttribute('aria-current', 'page');
-      } else {
-        link.classList.remove('active');
-        link.removeAttribute('aria-current');
-      }
-    });
-  };
+    links.forEach(link => {
+      const linkPage = link.getAttribute('href');
+      if (currentPage.includes(linkPage)) {
+        link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.classList.remove('active');
+        link.removeAttribute('aria-current');
+      }
+    });
+  };
 
-  highlightActiveLink();
+  highlightActiveLink();
 </script>
 
 </body>
